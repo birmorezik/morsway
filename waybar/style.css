@@ -1,0 +1,88 @@
+@define-color base #1e1e2e;
+@define-color text #cdd6f4;
+@define-color lavender #6b3874;
+@define-color mauve #cba6f7;
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color peach #fab387;
+@define-color red #f38ba8;
+@define-color green #a6e3a1;
+@define-color yellow #f9e2af;
+
+/* Global settings */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.65);
+    color: @text;
+    border-bottom: 2px solid @lavender;
+}
+
+/* Remove group backgrounds for a flat look */
+.modules-left, .modules-center, .modules-right {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 10px;
+    color: @text;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button:hover {
+    background-color: @surface1;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.focused {
+    background-color: @lavender;
+    color: @text;
+}
+
+#workspaces button.urgent {
+    background-color: @peach;
+    color: @base;
+}
+
+#language, #network, #bluetooth, #battery, #clock, #window {
+    padding: 0 10px;
+    background-color: transparent;
+    color: @mauve; /* Applies Catppuccin purple to the module text/icons */
+}
+
+#window {
+    color: @text;
+}
+
+/* Battery colors based on state */
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @base;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        background-color: @text;
+        color: @base;
+    }
+}
