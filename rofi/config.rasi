@@ -1,0 +1,98 @@
+configuration {
+    modi:                       "drun,run,window";
+    show-icons:                 true;
+    font:                       "JetBrainsMono Nerd Font 11";
+    display-drun:               "  Apps";
+    display-run:                "  Run";
+    display-window:             "🪟  Windows";
+    drun-display-format:        "{name}";
+    window-format:              "{w} · {c} · {t}";
+}
+
+* {
+    /* Catppuccin Mocha Colors */
+    bg-base:     #1e1e2ecc; /* Semi-transparent base for SwayFX blur */
+    bg-surface:  #313244ff;
+    bg-selected: #6b3874ff; /* Using your $lavender */
+    fg-text:     #cdd6f4ff;
+    fg-subtext:  #a6adc8ff;
+    border-col:  #6b3874ff;
+
+    background-color: transparent;
+    text-color:       @fg-text;
+    margin:           0px;
+    padding:          0px;
+}
+
+window {
+    location:         center;
+    anchor:           center;
+    width:            600px;
+    x-offset:         0px;
+    y-offset:         0px;
+
+    /* Styling & Rounded Corners */
+    border:           2px;
+    border-color:     @border-col;
+    border-radius:    16px;
+    background-color: @bg-base;
+}
+
+mainbox {
+    spacing:          12px;
+    padding:          20px;
+    children:         [ "inputbar", "listview" ];
+}
+
+inputbar {
+    spacing:          10px;
+    padding:          12px;
+    border-radius:    10px;
+    background-color: @bg-surface;
+    text-color:       @fg-text;
+    children:         [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color:       #cba6f7ff; /* $mauve accent */
+}
+
+entry {
+    placeholder:      "Search...";
+    placeholder-color:@fg-subtext;
+    text-color:       @fg-text;
+}
+
+listview {
+    lines:            8;
+    columns:          1;
+    fixed-height:     false;
+    spacing:          6px;
+    cycle:            true;
+}
+
+element {
+    padding:          10px 14px;
+    border-radius:    8px;
+    spacing:          10px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg-text;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color:       #1e1e2eff; /* Dark text for contrast against lavender */
+}
+
+element-icon {
+    size:             24px;
+}
+
+element-text {
+    vertical-align:   0.5;
+    text-color:       inherit;
+}
