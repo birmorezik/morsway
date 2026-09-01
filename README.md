@@ -39,7 +39,7 @@ All configs live in `~/.config/`:
 
 ## 🚀 Installation
 
-### 1. Install the required packages
+### Install the required packages
 
 **Arch / Arch-Based Distros:**
 
@@ -48,7 +48,7 @@ curl -fsSL https://raw.githubusercontent.com/birmorezik/morsway/main/install.sh 
 ```
 
 **Debian / Debian-Based Distros:**
-- Please refer to [SwayFX INSTALL_deb.md](https://github.com/wlrfx/swayfx/blob/master/INSTALL-deb.md) for installing SwayFX and then run the installer.
+- Please refer to [SwayFX INSTALL_deb.md](https://github.com/wlrfx/swayfx/blob/master/INSTALL-deb.md) for installing SwayFX and then run the arch installer.
 - If you wish to use sway instead of SwayFX, make sure to remove the "SwayFX" section from ~/.config/sway/config
 
 **Other Distros:**.
@@ -80,7 +80,6 @@ curl -fsSL https://raw.githubusercontent.com/birmorezik/morsway/main/install.sh 
 | **File manager**    | `SUPER` + `E`                               |
 | **Firefox**         | `SUPER` + `Z`                               |
 
-> 🔧 **Note:** Volume & brightness OSD is provided by `swayosd` – shows overlay on change.
 
 ## 🖼️ Usage Guide
 
