@@ -4,8 +4,6 @@ Minimal, lightweight, functional and PURPLE sway & swayfx dotfiles
 
 Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this README template and a lotta useful info
 
-- **Some** files were generated with the help of AI ( Mostly some parts of waybar css ).
-
 ![screenshot](showcase.png)
 
 ## ⚙️ Requirements
@@ -123,5 +121,7 @@ curl -fsSL https://raw.githubusercontent.com/birmorezik/morsway/main/install.sh 
 ---
 
 For further help, check the [Sway website](https://swaywm.org) or the individual tool documentation.
+
+- **Some** files were generated with the help of AI ( Mostly some parts of waybar css ).
 
 **If you like my configs, don't forget to leave a star ⭐**
