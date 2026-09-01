@@ -10,6 +10,7 @@ Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this REA
 
 - Any distro with sway or swayfx
 - Basic understanding of terminal and shell-script knowledge
+- `waybg`, `swaylock`, `swayidle`, `dunst`, `kitty`, `waybar`, `wlogout`, `grim`, `wl-clipboard`, `cliphist`, `brightnessctl`
 
 ## 📦 Packages Used
 
