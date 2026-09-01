@@ -4,6 +4,8 @@ Minimal, lightweight, functional and PURPLE sway & swayfx dotfiles
 
 Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this README template and a lotta useful info
 
+- **Some** files were generated with the help of AI ( Mostly some parts of waybar css ).
+
 ![screenshot](showcase.png)
 
 ## ⚙️ Requirements
