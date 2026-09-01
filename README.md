@@ -39,13 +39,13 @@ All configs live in `~/.config/`:
 
 ### 1. Install the required packages
 
-**Arch / Arch Based Distros:**
+**Arch / Arch-Based Distros:**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/birmorezik/morsway/main/install.sh | bash
 ```
 
-**Debian / Debian-based Distros:**
+**Debian / Debian-Based Distros:**
 - Please refer to [SwayFX INSTALL_deb.md](https://github.com/wlrfx/swayfx/blob/master/INSTALL-deb.md) for installing SwayFX and then run the installer.
 - If you wish to use sway instead of SwayFX, make sure to remove the "SwayFX" section from ~/.config/sway/config
 
