@@ -29,12 +29,14 @@ TMPDIR=$(mktemp -d)
 git clone --depth=1 "$REPO" "$TMPDIR/morsway"
 
 mkdir -p "$HOME/.config"
+mkdir "$HOME/Pictures/wall"
 
-cp -r "$TMPDIR/morsway/sway"   "$HOME/.config/"
-cp -r "$TMPDIR/morsway/waybar" "$HOME/.config/"
-cp -r "$TMPDIR/morsway/kitty"  "$HOME/.config/"
-cp -r "$TMPDIR/morsway/rofi"   "$HOME/.config/"
-cp -r "$TMPDIR/morsway/dunst"  "$HOME/.config/"
+cp -r "$TMPDIR/morsway/sway"     "$HOME/.config/"
+cp -r "$TMPDIR/morsway/waybar"   "$HOME/.config/"
+cp -r "$TMPDIR/morsway/kitty"    "$HOME/.config/"
+cp -r "$TMPDIR/morsway/rofi"     "$HOME/.config/"
+cp -r "$TMPDIR/morsway/dunst"    "$HOME/.config/"
+cp -r "$TMPDIR/morsway/wall.png" "$HOME/Pictures/wall"
 
 rm -rf "$TMPDIR"
 
