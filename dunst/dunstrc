@@ -1,0 +1,40 @@
+[global]
+    # Font and geometry
+    font = Sans 10
+    width = 300
+    height = 300
+    offset = 10x50
+    origin = top-right
+
+    # Progress bar (Volume/Brightness)
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    
+    # Progress bar color ($lavender)
+    highlight = "#6b3874"
+
+    # Borders and formatting
+    frame_width = 2
+    separator_color = frame
+    corner_radius = 5
+
+[urgency_low]
+    # $base background, $text foreground, $lavender frame
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#6b3874"
+
+[urgency_normal]
+    # $base background, $text foreground, $lavender frame
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#6b3874"
+
+[urgency_critical]
+    # $base background, $red foreground, $red frame
+    background = "#1e1e2e"
+    foreground = "#f38ba8"
+    frame_color = "#f38ba8"
