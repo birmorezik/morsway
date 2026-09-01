@@ -2,7 +2,7 @@
 
 Minimal, lightweight, functional and PURPLE sway & swayfx dotfiles
 
-Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this README template ( makingmy life a lot easier (: ) and a lotta useful info
+Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this README template and a lotta useful info
 
 ![screenshot](showcase.png)
 
