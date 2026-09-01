@@ -11,6 +11,7 @@ Huge thanks to dear [Parviz](https://github.com/parvizsudo/Aozora), for this REA
 - Any distro with sway or swayfx
 - Basic understanding of terminal and shell-script knowledge
 - `waybg`, `swaylock`, `swayidle`, `dunst`, `kitty`, `waybar`, `wlogout`, `grim`, `wl-clipboard`, `cliphist`, `brightnessctl`
+- I didn't include pipewire & wireplumber in the install script, cuz I don't want to nuke anyone's audio setup; but make sure you have them set up
 
 ## 📦 Packages Used
 
