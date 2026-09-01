@@ -108,12 +108,9 @@ curl -fsSL https://raw.githubusercontent.com/birmorezik/morsway/main/install.sh 
 
 | Problem                                       | Likely fix                                                                                                                           |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Screen sharing (Discord/Zoom) not working** | Install `xdg-desktop-portal-hyprland` and restart the portal: `killall xdg-desktop-portal; /usr/lib/xdg-desktop-portal -r`           |
-| **Clipboard history not saving**              | Run `cliphist` manually: `wl-paste --watch cliphist store` – check it's in `exec-once`                                               |
-| **GTK apps look wrong**                       | Open `nwg-look`, select **Breeze** and **Dark**, then click **Apply**. For Qt apps, open `qt5ct` / `qt6ct` and choose `Breeze Dark`. |
-| **`awww` doesn’t set wallpaper**              | Make sure `awww-daemon` is running (`ps aux \| grep awww`). If missing, run `awww-daemon &` before `awww`.                           |
+| **Clipboard history not saving**              | Run `cliphist` manually: `wl-paste --watch cliphist store` and look for errors                                                       |
 | **Waybar shows no icons**                     | Install a nerd‑fonts patched font (e.g., `ttf-nerd-fonts-symbols`) and set it in `waybar/style.css`.                                 |
-| **Hypridle doesn’t lock**                     | Check that `hypridle` is running and that `hyprlock` is installed. Test with `hyprlock` manually.                                    |
+| **swayidle doesn’t lock**                     | Check that `swaylock` is installed. Test with `swaylock` manually.                                                                   |
 
 # 📝 Customization Tips
 
